@@ -1,4 +1,4 @@
-courses
+Courses
 =======
 
 Live and Learn
