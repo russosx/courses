@@ -1,0 +1,192 @@
+Fri Dec 27 17:47:32.842 [initandlisten] MongoDB starting : pid=747 port=27018 dbpath=/data/rs2 64-bit host=dalesreck
+Fri Dec 27 17:47:32.843 [initandlisten] 
+Fri Dec 27 17:47:32.843 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Fri Dec 27 17:47:32.843 [initandlisten] db version v2.4.6
+Fri Dec 27 17:47:32.843 [initandlisten] git version: b9925db5eac369d77a3a5f5d98a145eaaacd9673
+Fri Dec 27 17:47:32.843 [initandlisten] build info: Darwin bs-osx-106-x86-64-2.10gen.cc 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:32:41 PDT 2011; root:xnu-1504.15.3~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Fri Dec 27 17:47:32.844 [initandlisten] allocator: system
+Fri Dec 27 17:47:32.844 [initandlisten] options: { dbpath: "/data/rs2", fork: true, logpath: "2.log", oplogSize: 64, port: 27018, replSet: "m101", smallfiles: true }
+Fri Dec 27 17:47:32.845 [initandlisten] journal dir=/data/rs2/journal
+Fri Dec 27 17:47:32.845 [initandlisten] recover : no journal files present, no recovery needed
+Fri Dec 27 17:47:32.902 [FileAllocator] allocating new datafile /data/rs2/local.ns, filling with zeroes...
+Fri Dec 27 17:47:32.902 [FileAllocator] creating directory /data/rs2/_tmp
+Fri Dec 27 17:47:32.928 [FileAllocator] done allocating datafile /data/rs2/local.ns, size: 16MB,  took 0.025 secs
+Fri Dec 27 17:47:33.033 [FileAllocator] allocating new datafile /data/rs2/local.0, filling with zeroes...
+Fri Dec 27 17:47:33.052 [FileAllocator] done allocating datafile /data/rs2/local.0, size: 16MB,  took 0.018 secs
+Fri Dec 27 17:47:33.181 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:37 280ms
+Fri Dec 27 17:47:33.183 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:47:33.183 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Fri Dec 27 17:47:33.183 [websvr] admin web console waiting for connections on port 28018
+Fri Dec 27 17:47:33.184 [initandlisten] waiting for connections on port 27018
+Fri Dec 27 17:47:43.185 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:47:53.186 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:48:03.188 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:48:13.189 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:48:23.190 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:48:33.192 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:48:43.193 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:48:53.194 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:49:03.194 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:49:13.195 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:49:23.197 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:49:33.199 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:49:41.431 [initandlisten] connection accepted from 127.0.0.1:50737 #1 (1 connection now open)
+Fri Dec 27 17:49:43.200 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Fri Dec 27 17:49:48.968 [initandlisten] connection accepted from 127.0.0.1:50740 #2 (2 connections now open)
+Fri Dec 27 17:49:53.202 [rsStart] trying to contact localhost:27017
+Fri Dec 27 17:49:53.203 [rsStart] trying to contact localhost:27019
+Fri Dec 27 17:49:53.205 [rsStart] replSet I am localhost:27018
+Fri Dec 27 17:49:53.205 [rsStart] replSet got config version 1 from a remote, saving locally
+Fri Dec 27 17:49:53.207 [rsStart] replSet info saving a newer config version to local.system.replset
+Fri Dec 27 17:49:53.211 [rsStart] replSet saveConfigLocally done
+Fri Dec 27 17:49:53.212 [rsStart] replSet STARTUP2
+Fri Dec 27 17:49:53.213 [rsSync] ******
+Fri Dec 27 17:49:53.213 [rsSync] creating replication oplog of size: 64MB...
+Fri Dec 27 17:49:53.227 [FileAllocator] allocating new datafile /data/rs2/local.1, filling with zeroes...
+Fri Dec 27 17:49:55.206 [rsHealthPoll] replSet member localhost:27017 is up
+Fri Dec 27 17:49:55.206 [rsHealthPoll] replSet member localhost:27019 is up
+Fri Dec 27 17:49:55.206 [rsHealthPoll] replSet member localhost:27019 is now in state STARTUP2
+Fri Dec 27 17:49:55.206 [rsHealthPoll] replSet member localhost:27017 is now in state SECONDARY
+Fri Dec 27 17:49:55.367 [FileAllocator] done allocating datafile /data/rs2/local.1, size: 128MB,  took 2.139 secs
+Fri Dec 27 17:49:55.745 [rsSync] ******
+Fri Dec 27 17:49:55.745 [rsSync] replSet initial sync pending
+Fri Dec 27 17:49:55.745 [rsSync] replSet initial sync need a member to be primary or secondary to do our initial sync
+Fri Dec 27 17:50:00.976 [conn1] end connection 127.0.0.1:50737 (1 connection now open)
+Fri Dec 27 17:50:00.985 [initandlisten] connection accepted from 127.0.0.1:50743 #3 (2 connections now open)
+Fri Dec 27 17:50:00.994 [conn3] replSet RECOVERING
+Fri Dec 27 17:50:00.995 [conn3] replSet info voting yea for localhost:27017 (0)
+Fri Dec 27 17:50:01.211 [rsHealthPoll] replSet member localhost:27019 is now in state RECOVERING
+Fri Dec 27 17:50:03.213 [rsHealthPoll] replSet member localhost:27017 is now in state PRIMARY
+Fri Dec 27 17:50:07.216 [rsHealthPoll] replSet member localhost:27019 is now in state SECONDARY
+Fri Dec 27 17:50:11.748 [rsSync] replSet initial sync pending
+Fri Dec 27 17:50:11.748 [rsSync] replSet syncing to: localhost:27017
+Fri Dec 27 17:50:11.752 [rsSync] build index local.me { _id: 1 }
+Fri Dec 27 17:50:11.754 [rsSync] build index done.  scanned 0 total records. 0.001 secs
+Fri Dec 27 17:50:11.756 [rsSync] build index local.replset.minvalid { _id: 1 }
+Fri Dec 27 17:50:11.757 [rsSync] build index done.  scanned 0 total records. 0 secs
+Fri Dec 27 17:50:11.757 [rsSync] replSet initial sync drop all databases
+Fri Dec 27 17:50:11.757 [rsSync] dropAllDatabasesExceptLocal 1
+Fri Dec 27 17:50:11.757 [rsSync] replSet initial sync clone all databases
+Fri Dec 27 17:50:11.758 [rsSync] replSet initial sync data copy, starting syncup
+Fri Dec 27 17:50:11.758 [rsSync] oplog sync 1 of 3
+Fri Dec 27 17:50:11.759 [rsSync] oplog sync 2 of 3
+Fri Dec 27 17:50:11.759 [rsSync] replSet initial sync building indexes
+Fri Dec 27 17:50:11.759 [rsSync] oplog sync 3 of 3
+Fri Dec 27 17:50:11.760 [rsSync] replSet initial sync finishing up
+Fri Dec 27 17:50:11.787 [rsSync] replSet set minValid=52bda197:1
+Fri Dec 27 17:50:11.800 [rsSync] replSet initial sync done
+Fri Dec 27 17:50:12.241 [rsBackgroundSync] replSet syncing to: localhost:27017
+Fri Dec 27 17:50:12.802 [rsSyncNotifier] replset setting oplog notifier to localhost:27017
+Fri Dec 27 17:50:13.812 [rsSync] replSet SECONDARY
+Fri Dec 27 17:50:16.994 [conn2] end connection 127.0.0.1:50740 (1 connection now open)
+Fri Dec 27 17:50:16.994 [initandlisten] connection accepted from 127.0.0.1:50753 #4 (2 connections now open)
+Fri Dec 27 17:50:31.019 [conn3] end connection 127.0.0.1:50743 (1 connection now open)
+Fri Dec 27 17:50:31.019 [initandlisten] connection accepted from 127.0.0.1:50755 #5 (2 connections now open)
+Fri Dec 27 17:50:47.017 [conn4] end connection 127.0.0.1:50753 (1 connection now open)
+Fri Dec 27 17:50:47.018 [initandlisten] connection accepted from 127.0.0.1:50759 #6 (2 connections now open)
+Fri Dec 27 17:51:01.066 [conn5] end connection 127.0.0.1:50755 (1 connection now open)
+Fri Dec 27 17:51:01.078 [initandlisten] connection accepted from 127.0.0.1:50761 #7 (2 connections now open)
+Fri Dec 27 17:51:17.090 [conn6] end connection 127.0.0.1:50759 (1 connection now open)
+Fri Dec 27 17:51:17.093 [initandlisten] connection accepted from 127.0.0.1:50765 #8 (2 connections now open)
+Fri Dec 27 17:51:31.119 [conn7] end connection 127.0.0.1:50761 (1 connection now open)
+Fri Dec 27 17:51:31.120 [initandlisten] connection accepted from 127.0.0.1:50767 #9 (2 connections now open)
+Fri Dec 27 17:51:47.126 [conn8] end connection 127.0.0.1:50765 (1 connection now open)
+Fri Dec 27 17:51:47.127 [initandlisten] connection accepted from 127.0.0.1:50771 #10 (2 connections now open)
+Fri Dec 27 17:52:01.151 [conn9] end connection 127.0.0.1:50767 (1 connection now open)
+Fri Dec 27 17:52:01.151 [initandlisten] connection accepted from 127.0.0.1:50773 #11 (2 connections now open)
+Fri Dec 27 17:52:11.447 [initandlisten] connection accepted from 127.0.0.1:50778 #12 (3 connections now open)
+Fri Dec 27 17:52:11.460 [conn12] end connection 127.0.0.1:50778 (2 connections now open)
+Fri Dec 27 17:52:17.146 [conn10] end connection 127.0.0.1:50771 (1 connection now open)
+Fri Dec 27 17:52:17.147 [initandlisten] connection accepted from 127.0.0.1:50780 #13 (3 connections now open)
+Fri Dec 27 17:52:31.170 [conn11] end connection 127.0.0.1:50773 (1 connection now open)
+Fri Dec 27 17:52:31.171 [initandlisten] connection accepted from 127.0.0.1:50793 #14 (2 connections now open)
+Fri Dec 27 17:52:47.175 [conn13] end connection 127.0.0.1:50780 (1 connection now open)
+Fri Dec 27 17:52:47.176 [initandlisten] connection accepted from 127.0.0.1:50797 #15 (2 connections now open)
+Fri Dec 27 17:53:01.192 [conn14] end connection 127.0.0.1:50793 (1 connection now open)
+Fri Dec 27 17:53:01.193 [initandlisten] connection accepted from 127.0.0.1:50799 #16 (2 connections now open)
+Fri Dec 27 17:53:17.200 [conn15] end connection 127.0.0.1:50797 (1 connection now open)
+Fri Dec 27 17:53:17.201 [initandlisten] connection accepted from 127.0.0.1:50805 #17 (2 connections now open)
+Fri Dec 27 17:53:31.224 [conn16] end connection 127.0.0.1:50799 (1 connection now open)
+Fri Dec 27 17:53:31.225 [initandlisten] connection accepted from 127.0.0.1:50809 #18 (2 connections now open)
+Fri Dec 27 17:53:47.235 [conn17] end connection 127.0.0.1:50805 (1 connection now open)
+Fri Dec 27 17:53:47.236 [initandlisten] connection accepted from 127.0.0.1:50813 #19 (2 connections now open)
+Fri Dec 27 17:54:01.246 [conn18] end connection 127.0.0.1:50809 (1 connection now open)
+Fri Dec 27 17:54:01.246 [initandlisten] connection accepted from 127.0.0.1:50815 #20 (3 connections now open)
+Fri Dec 27 17:54:17.256 [conn19] end connection 127.0.0.1:50813 (1 connection now open)
+Fri Dec 27 17:54:17.257 [initandlisten] connection accepted from 127.0.0.1:50819 #21 (2 connections now open)
+Fri Dec 27 17:54:31.268 [conn20] end connection 127.0.0.1:50815 (1 connection now open)
+Fri Dec 27 17:54:31.268 [initandlisten] connection accepted from 127.0.0.1:50821 #22 (2 connections now open)
+Fri Dec 27 17:54:47.282 [conn21] end connection 127.0.0.1:50819 (1 connection now open)
+Fri Dec 27 17:54:47.282 [initandlisten] connection accepted from 127.0.0.1:50827 #23 (2 connections now open)
+Fri Dec 27 17:55:01.305 [conn22] end connection 127.0.0.1:50821 (1 connection now open)
+Fri Dec 27 17:55:01.306 [initandlisten] connection accepted from 127.0.0.1:50829 #24 (2 connections now open)
+Fri Dec 27 17:55:17.305 [conn23] end connection 127.0.0.1:50827 (1 connection now open)
+Fri Dec 27 17:55:17.307 [initandlisten] connection accepted from 127.0.0.1:50833 #25 (2 connections now open)
+Fri Dec 27 17:55:31.341 [conn24] end connection 127.0.0.1:50829 (1 connection now open)
+Fri Dec 27 17:55:31.341 [initandlisten] connection accepted from 127.0.0.1:50835 #26 (2 connections now open)
+Fri Dec 27 17:55:47.339 [conn25] end connection 127.0.0.1:50833 (1 connection now open)
+Fri Dec 27 17:55:47.339 [initandlisten] connection accepted from 127.0.0.1:50839 #27 (2 connections now open)
+Fri Dec 27 17:56:01.374 [conn26] end connection 127.0.0.1:50835 (1 connection now open)
+Fri Dec 27 17:56:01.374 [initandlisten] connection accepted from 127.0.0.1:50841 #28 (3 connections now open)
+Fri Dec 27 17:56:17.362 [conn27] end connection 127.0.0.1:50839 (1 connection now open)
+Fri Dec 27 17:56:17.363 [initandlisten] connection accepted from 127.0.0.1:50845 #29 (2 connections now open)
+Fri Dec 27 17:56:31.396 [conn28] end connection 127.0.0.1:50841 (1 connection now open)
+Fri Dec 27 17:56:31.397 [initandlisten] connection accepted from 127.0.0.1:50847 #30 (2 connections now open)
+Fri Dec 27 17:56:47.382 [conn29] end connection 127.0.0.1:50845 (1 connection now open)
+Fri Dec 27 17:56:47.383 [initandlisten] connection accepted from 127.0.0.1:50851 #31 (3 connections now open)
+Fri Dec 27 17:57:01.417 [conn30] end connection 127.0.0.1:50847 (1 connection now open)
+Fri Dec 27 17:57:01.418 [initandlisten] connection accepted from 127.0.0.1:50853 #32 (2 connections now open)
+Fri Dec 27 17:57:17.405 [conn31] end connection 127.0.0.1:50851 (1 connection now open)
+Fri Dec 27 17:57:17.405 [initandlisten] connection accepted from 127.0.0.1:50857 #33 (2 connections now open)
+Fri Dec 27 17:57:31.438 [conn32] end connection 127.0.0.1:50853 (1 connection now open)
+Fri Dec 27 17:57:31.438 [initandlisten] connection accepted from 127.0.0.1:50860 #34 (2 connections now open)
+Fri Dec 27 17:57:47.427 [conn33] end connection 127.0.0.1:50857 (1 connection now open)
+Fri Dec 27 17:57:47.428 [initandlisten] connection accepted from 127.0.0.1:50864 #35 (2 connections now open)
+Fri Dec 27 17:58:01.460 [conn34] end connection 127.0.0.1:50860 (1 connection now open)
+Fri Dec 27 17:58:01.460 [initandlisten] connection accepted from 127.0.0.1:50866 #36 (3 connections now open)
+Fri Dec 27 17:58:04.445 [conn36] end connection 127.0.0.1:50866 (1 connection now open)
+Fri Dec 27 17:58:04.458 [rsBackgroundSync] replSet sync source problem: 10278 dbclient error communicating with server: localhost:27017
+Fri Dec 27 17:58:04.459 [rsBackgroundSync] replSet syncing to: localhost:27017
+Fri Dec 27 17:58:04.459 [rsBackgroundSync] repl: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:05.460 [rsBackgroundSync] replSet not trying to sync from localhost:27017, it is vetoed for 9 more seconds
+Fri Dec 27 17:58:05.461 [rsBackgroundSync] replSet not trying to sync from localhost:27017, it is vetoed for 9 more seconds
+Fri Dec 27 17:58:05.654 [rsHealthPoll] DBClientCursor::init call() failed
+Fri Dec 27 17:58:05.654 [rsHealthPoll] replset info localhost:27017 heartbeat failed, retrying
+Fri Dec 27 17:58:05.736 [rsHealthPoll] replSet info localhost:27017 is down (or slow to respond): 
+Fri Dec 27 17:58:05.736 [rsHealthPoll] replSet member localhost:27017 is now in state DOWN
+Fri Dec 27 17:58:06.189 [rsMgr] replSet info electSelf 1
+Fri Dec 27 17:58:06.462 [rsMgr] replSet PRIMARY
+Fri Dec 27 17:58:07.463 [initandlisten] connection accepted from 127.0.0.1:50872 #37 (2 connections now open)
+Fri Dec 27 17:58:07.737 [rsHealthPoll] replset info localhost:27017 heartbeat failed, retrying
+Fri Dec 27 17:58:09.739 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:09.739 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:09.739 [rsHealthPoll] replset info localhost:27017 heartbeat failed, retrying
+Fri Dec 27 17:58:09.739 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:09.740 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:09.740 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:11.741 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:11.741 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:11.742 [rsHealthPoll] replset info localhost:27017 heartbeat failed, retrying
+Fri Dec 27 17:58:11.742 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:11.742 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:11.742 [rsHealthPoll] couldn't connect to localhost:27017: couldn't connect to server localhost:27017
+Fri Dec 27 17:58:13.017 [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+Fri Dec 27 17:58:13.017 [signalProcessingThread] now exiting
+Fri Dec 27 17:58:13.017 dbexit: 
+Fri Dec 27 17:58:13.017 [signalProcessingThread] shutdown: going to close listening sockets...
+Fri Dec 27 17:58:13.017 [signalProcessingThread] closing listening socket: 9
+Fri Dec 27 17:58:13.021 [signalProcessingThread] closing listening socket: 10
+Fri Dec 27 17:58:13.021 [signalProcessingThread] closing listening socket: 12
+Fri Dec 27 17:58:13.021 [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+Fri Dec 27 17:58:13.022 [signalProcessingThread] shutdown: going to flush diaglog...
+Fri Dec 27 17:58:13.022 [signalProcessingThread] shutdown: going to close sockets...
+Fri Dec 27 17:58:13.022 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Fri Dec 27 17:58:13.022 [signalProcessingThread] shutdown: lock for final commit...
+Fri Dec 27 17:58:13.022 [signalProcessingThread] shutdown: final commit...
+Fri Dec 27 17:58:13.022 [conn35] end connection 127.0.0.1:50864 (1 connection now open)
+Fri Dec 27 17:58:13.038 [signalProcessingThread] shutdown: closing all files...
+Fri Dec 27 17:58:13.038 [signalProcessingThread] closeAllFiles() finished
+Fri Dec 27 17:58:13.038 [signalProcessingThread] journalCleanup...
+Fri Dec 27 17:58:13.038 [signalProcessingThread] removeJournalFiles
+Fri Dec 27 17:58:13.038 [signalProcessingThread] shutdown: removing fs lock...
+Fri Dec 27 17:58:13.038 dbexit: really exiting now
