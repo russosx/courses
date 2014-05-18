@@ -27,10 +27,10 @@ Sort_and_Count(array A, length n)
 	else
 		(b, x) = Sort_and_Count(1st half of A, n/2)	=> O(n*logn)
 		(c, y) = Sort_and_Count(2nd half of A, n/2)	=> O(n*logn)
-		(d, z) = Merege_and_CountSplitInv(A, n)		=> O(n)
+		(d, z) = Merge_and_CountSplitInv(A, n)		=> O(n)
 	return x + y + z
 
-Pseudocode for Merege_and_CountSplitInv:
+Pseudocode for Merge_and_CountSplitInv:
 	D = output[n]
 	B = 1st sorted array[n/2]
 	C = 2nd sorted array[n/2]
