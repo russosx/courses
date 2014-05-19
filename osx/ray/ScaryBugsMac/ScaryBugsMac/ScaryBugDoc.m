@@ -7,7 +7,7 @@
 //
 
 #import "ScaryBugDoc.h"
-#import "ScaryBugData.m"
+#import "ScaryBugData.h"
 
 @implementation ScaryBugDoc
 

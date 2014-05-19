@@ -20,8 +20,8 @@
 {
     self.masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController"
                                                                        bundle:nil];
-    [self.window.contentView addSubview:self.masterViewController.view];
     self.masterViewController.bugs = [[NSMutableArray alloc] initWithArray:[self getSampleData]];
+    [self.window.contentView addSubview:self.masterViewController.view];
     self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
 }
 
