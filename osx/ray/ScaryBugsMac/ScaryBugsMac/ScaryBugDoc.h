@@ -14,7 +14,7 @@
 
 @property (strong) ScaryBugData *data;
 @property (strong) NSImage *thumbImage;
-@property (strong) NSImage *fullIImage;
+@property (strong) NSImage *fullImage;
 
 - (id)initWithTitle:(NSString*)title
              rating:(float)rating

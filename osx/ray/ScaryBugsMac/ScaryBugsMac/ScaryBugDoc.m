@@ -19,7 +19,7 @@
     if (self = [super init]) {
         self.data = [[ScaryBugData alloc] initWithTitle:title rating:rating];
         self.thumbImage = thumbImage;
-        self.fullIImage = fullImage;
+        self.fullImage = fullImage;
     }
     return self;
 }

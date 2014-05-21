@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6332EB2D192BCC09007B0715 /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 6332EB2C192BCC09007B0715 /* EDStarRating.m */; };
+		6332EB31192BCC48007B0715 /* NSImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 6332EB30192BCC48007B0715 /* NSImage+Extras.m */; };
+		6332EB35192BCC5C007B0715 /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 6332EB32192BCC5C007B0715 /* shockedface2_empty.png */; };
+		6332EB36192BCC5C007B0715 /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 6332EB33192BCC5C007B0715 /* shockedface2_full.png */; };
+		6332EB37192BCC5C007B0715 /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 6332EB34192BCC5C007B0715 /* shockedface2_half.png */; };
 		D266BCEB192917E70047DADB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D266BCE9192917E70047DADB /* MasterViewController.m */; };
 		D266BCEC192917E70047DADB /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D266BCEA192917E70047DADB /* MasterViewController.xib */; };
 		D266BCF019291E070047DADB /* ScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = D266BCEF19291E070047DADB /* ScaryBugData.m */; };
@@ -44,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6332EB2B192BCC09007B0715 /* EDStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDStarRating.h; sourceTree = "<group>"; };
+		6332EB2C192BCC09007B0715 /* EDStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDStarRating.m; sourceTree = "<group>"; };
+		6332EB2F192BCC48007B0715 /* NSImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extras.h"; sourceTree = "<group>"; };
+		6332EB30192BCC48007B0715 /* NSImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extras.m"; sourceTree = "<group>"; };
+		6332EB32192BCC5C007B0715 /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		6332EB33192BCC5C007B0715 /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		6332EB34192BCC5C007B0715 /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
 		D266BCE8192917E70047DADB /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		D266BCE9192917E70047DADB /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		D266BCEA192917E70047DADB /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
@@ -102,10 +114,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6332EB2E192BCC37007B0715 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6332EB2F192BCC48007B0715 /* NSImage+Extras.h */,
+				6332EB30192BCC48007B0715 /* NSImage+Extras.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		D266BCE5192917750047DADB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D266BCEA192917E70047DADB /* MasterViewController.xib */,
+				6332EB2B192BCC09007B0715 /* EDStarRating.h */,
+				6332EB2C192BCC09007B0715 /* EDStarRating.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -124,15 +146,19 @@
 		D266BCE7192917C30047DADB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D266BCEA192917E70047DADB /* MasterViewController.xib */,
 				D266BCE8192917E70047DADB /* MasterViewController.h */,
 				D266BCE9192917E70047DADB /* MasterViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		D266BCF41929256A0047DADB /* ScaryBugsPictures */ = {
+		D266BCF41929256A0047DADB /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				6332EB32192BCC5C007B0715 /* shockedface2_empty.png */,
+				6332EB33192BCC5C007B0715 /* shockedface2_full.png */,
+				6332EB34192BCC5C007B0715 /* shockedface2_half.png */,
 				D266BCF51929256A0047DADB /* attribution.txt */,
 				D266BCF61929256A0047DADB /* centipede.jpg */,
 				D266BCF71929256A0047DADB /* centipedeThumb.jpg */,
@@ -143,6 +169,7 @@
 				D266BCFC1929256A0047DADB /* wolfSpider.jpg */,
 				D266BCFD1929256A0047DADB /* wolfSpiderThumb.jpg */,
 			);
+			name = Art;
 			path = ScaryBugsPictures;
 			sourceTree = "<group>";
 		};
@@ -188,7 +215,8 @@
 		D296E5F61927EA2B005930D3 /* ScaryBugsMac */ = {
 			isa = PBXGroup;
 			children = (
-				D266BCF41929256A0047DADB /* ScaryBugsPictures */,
+				6332EB2E192BCC37007B0715 /* Helpers */,
+				D266BCF41929256A0047DADB /* Art */,
 				D266BCE7192917C30047DADB /* Controller */,
 				D266BCE6192917B90047DADB /* Model */,
 				D266BCE5192917750047DADB /* View */,
@@ -314,12 +342,15 @@
 				D296E6091927EA2B005930D3 /* Images.xcassets in Resources */,
 				D266BD011929256A0047DADB /* ladybug.jpg in Resources */,
 				D266BD041929256A0047DADB /* potatoBugThumb.jpg in Resources */,
+				6332EB35192BCC5C007B0715 /* shockedface2_empty.png in Resources */,
 				D266BD061929256A0047DADB /* wolfSpiderThumb.jpg in Resources */,
 				D296E6011927EA2B005930D3 /* Credits.rtf in Resources */,
 				D266BCFE1929256A0047DADB /* attribution.txt in Resources */,
 				D266BD031929256A0047DADB /* potatoBug.jpg in Resources */,
+				6332EB36192BCC5C007B0715 /* shockedface2_full.png in Resources */,
 				D296E6071927EA2B005930D3 /* MainMenu.xib in Resources */,
 				D266BD051929256A0047DADB /* wolfSpider.jpg in Resources */,
+				6332EB37192BCC5C007B0715 /* shockedface2_half.png in Resources */,
 				D266BCFF1929256A0047DADB /* centipede.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +373,9 @@
 				D266BCF319291FCB0047DADB /* ScaryBugDoc.m in Sources */,
 				D296E6041927EA2B005930D3 /* AppDelegate.m in Sources */,
 				D266BCEB192917E70047DADB /* MasterViewController.m in Sources */,
+				6332EB2D192BCC09007B0715 /* EDStarRating.m in Sources */,
 				D296E5FD1927EA2B005930D3 /* main.m in Sources */,
+				6332EB31192BCC48007B0715 /* NSImage+Extras.m in Sources */,
 				D266BCF019291E070047DADB /* ScaryBugData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
