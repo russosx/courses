@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>The Flatlanders</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body ng-controller="StoreController as store">
+		
+		<div ng-repeat="product in store.products">
+			<div ng-hide="product.soldOut">
+				<h1>{{ product.name }}</h1>
+				<h2>{{ product.price | currency }}</h2>
+				<p>{{ product.description }}</p>
+				<img ng-src="{{ product.images[0].full }}" alt="">
+				<button ng-show="product.canPurchase">Add to cart</button>
+			</div>
+	
+			<product-panels></product-panels>
+		</div>
+
+		
+
+		<!-- LIBS -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+		<!-- Application -->
+		<script src="app.js"></script>
+		<script src="products.js"></script>
+	</body>
+
+</html>

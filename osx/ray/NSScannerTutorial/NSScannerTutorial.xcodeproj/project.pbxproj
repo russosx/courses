@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104690EC185DFD290032320B /* PostCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 104690EB185DFD290032320B /* PostCellView.m */; };
+		1054F28D185CF80C000A5EE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1054F28C185CF80C000A5EE5 /* Cocoa.framework */; };
+		1054F297185CF80C000A5EE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1054F295185CF80C000A5EE5 /* InfoPlist.strings */; };
+		1054F299185CF80C000A5EE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1054F298185CF80C000A5EE5 /* main.m */; };
+		1054F29D185CF80C000A5EE5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1054F29B185CF80C000A5EE5 /* Credits.rtf */; };
+		1054F2A0185CF80C000A5EE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1054F29F185CF80C000A5EE5 /* AppDelegate.m */; };
+		1054F2A3185CF80C000A5EE5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1054F2A1185CF80C000A5EE5 /* MainMenu.xib */; };
+		1054F2A5185CF80C000A5EE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1054F2A4185CF80C000A5EE5 /* Images.xcassets */; };
+		1054F2AC185CF80D000A5EE5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1054F2AB185CF80D000A5EE5 /* XCTest.framework */; };
+		1054F2AD185CF80D000A5EE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1054F28C185CF80C000A5EE5 /* Cocoa.framework */; };
+		1054F2B5185CF80D000A5EE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1054F2B3185CF80D000A5EE5 /* InfoPlist.strings */; };
+		1054F2B7185CF80D000A5EE5 /* NSScannerTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1054F2B6185CF80D000A5EE5 /* NSScannerTutorialTests.m */; };
+		1054F32C185DFA2B000A5EE5 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1054F32A185DFA2B000A5EE5 /* MasterViewController.m */; };
+		1054F32D185DFA2B000A5EE5 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1054F32B185DFA2B000A5EE5 /* MasterViewController.xib */; };
+		10F6D5C91868FF2000B95A87 /* 50418 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5981868FF2000B95A87 /* 50418 */; };
+		10F6D5CA1868FF2000B95A87 /* 50421 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5991868FF2000B95A87 /* 50421 */; };
+		10F6D5CB1868FF2000B95A87 /* 50424 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D59A1868FF2000B95A87 /* 50424 */; };
+		10F6D5CC1868FF2000B95A87 /* 50432 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D59B1868FF2000B95A87 /* 50432 */; };
+		10F6D5CD1868FF2000B95A87 /* 50437 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D59C1868FF2000B95A87 /* 50437 */; };
+		10F6D5CE1868FF2000B95A87 /* 50442 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D59D1868FF2000B95A87 /* 50442 */; };
+		10F6D5CF1868FF2000B95A87 /* 50447 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D59E1868FF2000B95A87 /* 50447 */; };
+		10F6D5D01868FF2000B95A87 /* 50450 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D59F1868FF2000B95A87 /* 50450 */; };
+		10F6D5D11868FF2000B95A87 /* 50459 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A01868FF2000B95A87 /* 50459 */; };
+		10F6D5D21868FF2000B95A87 /* 50464 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A11868FF2000B95A87 /* 50464 */; };
+		10F6D5D31868FF2000B95A87 /* 50469 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A21868FF2000B95A87 /* 50469 */; };
+		10F6D5D41868FF2000B95A87 /* 50470 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A31868FF2000B95A87 /* 50470 */; };
+		10F6D5D51868FF2000B95A87 /* 50471 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A41868FF2000B95A87 /* 50471 */; };
+		10F6D5D61868FF2000B95A87 /* 50478 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A51868FF2000B95A87 /* 50478 */; };
+		10F6D5D71868FF2000B95A87 /* 50479 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A61868FF2000B95A87 /* 50479 */; };
+		10F6D5D81868FF2000B95A87 /* 50503 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A71868FF2000B95A87 /* 50503 */; };
+		10F6D5D91868FF2000B95A87 /* 50511 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A81868FF2000B95A87 /* 50511 */; };
+		10F6D5DA1868FF2000B95A87 /* 50514 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5A91868FF2000B95A87 /* 50514 */; };
+		10F6D5DB1868FF2000B95A87 /* 50519 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5AA1868FF2000B95A87 /* 50519 */; };
+		10F6D5DC1868FF2000B95A87 /* 50523 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5AB1868FF2000B95A87 /* 50523 */; };
+		10F6D5DD1868FF2000B95A87 /* 50526 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5AC1868FF2000B95A87 /* 50526 */; };
+		10F6D5DE1868FF2000B95A87 /* 50527 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5AD1868FF2000B95A87 /* 50527 */; };
+		10F6D5DF1868FF2000B95A87 /* 50536 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5AE1868FF2000B95A87 /* 50536 */; };
+		10F6D5E01868FF2000B95A87 /* 51493 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5AF1868FF2000B95A87 /* 51493 */; };
+		10F6D5E11868FF2000B95A87 /* 51543 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B01868FF2000B95A87 /* 51543 */; };
+		10F6D5E21868FF2000B95A87 /* 51551 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B11868FF2000B95A87 /* 51551 */; };
+		10F6D5E31868FF2000B95A87 /* 51595 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B21868FF2000B95A87 /* 51595 */; };
+		10F6D5E41868FF2000B95A87 /* 51641 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B31868FF2000B95A87 /* 51641 */; };
+		10F6D5E51868FF2000B95A87 /* 51688 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B41868FF2000B95A87 /* 51688 */; };
+		10F6D5E61868FF2000B95A87 /* 51690 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B51868FF2000B95A87 /* 51690 */; };
+		10F6D5E71868FF2000B95A87 /* 51693 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B61868FF2000B95A87 /* 51693 */; };
+		10F6D5E81868FF2000B95A87 /* 51740 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B71868FF2000B95A87 /* 51740 */; };
+		10F6D5E91868FF2000B95A87 /* 51769 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B81868FF2000B95A87 /* 51769 */; };
+		10F6D5EA1868FF2000B95A87 /* 51785 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5B91868FF2000B95A87 /* 51785 */; };
+		10F6D5EB1868FF2000B95A87 /* 51826 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5BA1868FF2000B95A87 /* 51826 */; };
+		10F6D5EC1868FF2000B95A87 /* 51845 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5BB1868FF2000B95A87 /* 51845 */; };
+		10F6D5ED1868FF2000B95A87 /* 51848 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5BC1868FF2000B95A87 /* 51848 */; };
+		10F6D5EE1868FF2000B95A87 /* 51858 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5BD1868FF2000B95A87 /* 51858 */; };
+		10F6D5EF1868FF2000B95A87 /* 51882 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5BE1868FF2000B95A87 /* 51882 */; };
+		10F6D5F01868FF2000B95A87 /* 51892 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5BF1868FF2000B95A87 /* 51892 */; };
+		10F6D5F11868FF2000B95A87 /* 52004 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C01868FF2000B95A87 /* 52004 */; };
+		10F6D5F21868FF2000B95A87 /* 52015 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C11868FF2000B95A87 /* 52015 */; };
+		10F6D5F31868FF2000B95A87 /* 52039 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C21868FF2000B95A87 /* 52039 */; };
+		10F6D5F41868FF2000B95A87 /* 52132 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C31868FF2000B95A87 /* 52132 */; };
+		10F6D5F51868FF2000B95A87 /* 52190 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C41868FF2000B95A87 /* 52190 */; };
+		10F6D5F61868FF2000B95A87 /* 52260 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C51868FF2000B95A87 /* 52260 */; };
+		10F6D5F71868FF2000B95A87 /* 52298 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C61868FF2000B95A87 /* 52298 */; };
+		10F6D5F81868FF2000B95A87 /* 52309 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C71868FF2000B95A87 /* 52309 */; };
+		10F6D5F91868FF2000B95A87 /* 52337 in Resources */ = {isa = PBXBuildFile; fileRef = 10F6D5C81868FF2000B95A87 /* 52337 */; };
+		635DF06619321BB70076D8E3 /* MacHardwarePost.m in Sources */ = {isa = PBXBuildFile; fileRef = 635DF06519321BB70076D8E3 /* MacHardwarePost.m */; };
+		635DF06A19321DE10076D8E3 /* MacHardwareDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 635DF06919321DE10076D8E3 /* MacHardwareDataParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1054F2AE185CF80D000A5EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1054F281185CF80C000A5EE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1054F288185CF80C000A5EE5;
+			remoteInfo = NSScannerTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		104690EA185DFD290032320B /* PostCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCellView.h; sourceTree = "<group>"; };
+		104690EB185DFD290032320B /* PostCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCellView.m; sourceTree = "<group>"; };
+		1054F289185CF80C000A5EE5 /* NSScannerTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSScannerTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1054F28C185CF80C000A5EE5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1054F28F185CF80C000A5EE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1054F290185CF80C000A5EE5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1054F291185CF80C000A5EE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1054F294185CF80C000A5EE5 /* NSScannerTutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSScannerTutorial-Info.plist"; sourceTree = "<group>"; };
+		1054F296185CF80C000A5EE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1054F298185CF80C000A5EE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1054F29A185CF80C000A5EE5 /* NSScannerTutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSScannerTutorial-Prefix.pch"; sourceTree = "<group>"; };
+		1054F29C185CF80C000A5EE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1054F29E185CF80C000A5EE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1054F29F185CF80C000A5EE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1054F2A2185CF80C000A5EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1054F2A4185CF80C000A5EE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1054F2AA185CF80D000A5EE5 /* NSScannerTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSScannerTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1054F2AB185CF80D000A5EE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1054F2B2185CF80D000A5EE5 /* NSScannerTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSScannerTutorialTests-Info.plist"; sourceTree = "<group>"; };
+		1054F2B4185CF80D000A5EE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1054F2B6185CF80D000A5EE5 /* NSScannerTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSScannerTutorialTests.m; sourceTree = "<group>"; };
+		1054F329185DFA2B000A5EE5 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1054F32A185DFA2B000A5EE5 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1054F32B185DFA2B000A5EE5 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		10F6D5981868FF2000B95A87 /* 50418 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50418; sourceTree = "<group>"; };
+		10F6D5991868FF2000B95A87 /* 50421 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50421; sourceTree = "<group>"; };
+		10F6D59A1868FF2000B95A87 /* 50424 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50424; sourceTree = "<group>"; };
+		10F6D59B1868FF2000B95A87 /* 50432 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50432; sourceTree = "<group>"; };
+		10F6D59C1868FF2000B95A87 /* 50437 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50437; sourceTree = "<group>"; };
+		10F6D59D1868FF2000B95A87 /* 50442 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50442; sourceTree = "<group>"; };
+		10F6D59E1868FF2000B95A87 /* 50447 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50447; sourceTree = "<group>"; };
+		10F6D59F1868FF2000B95A87 /* 50450 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50450; sourceTree = "<group>"; };
+		10F6D5A01868FF2000B95A87 /* 50459 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50459; sourceTree = "<group>"; };
+		10F6D5A11868FF2000B95A87 /* 50464 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50464; sourceTree = "<group>"; };
+		10F6D5A21868FF2000B95A87 /* 50469 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50469; sourceTree = "<group>"; };
+		10F6D5A31868FF2000B95A87 /* 50470 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50470; sourceTree = "<group>"; };
+		10F6D5A41868FF2000B95A87 /* 50471 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50471; sourceTree = "<group>"; };
+		10F6D5A51868FF2000B95A87 /* 50478 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50478; sourceTree = "<group>"; };
+		10F6D5A61868FF2000B95A87 /* 50479 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50479; sourceTree = "<group>"; };
+		10F6D5A71868FF2000B95A87 /* 50503 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50503; sourceTree = "<group>"; };
+		10F6D5A81868FF2000B95A87 /* 50511 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50511; sourceTree = "<group>"; };
+		10F6D5A91868FF2000B95A87 /* 50514 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50514; sourceTree = "<group>"; };
+		10F6D5AA1868FF2000B95A87 /* 50519 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50519; sourceTree = "<group>"; };
+		10F6D5AB1868FF2000B95A87 /* 50523 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50523; sourceTree = "<group>"; };
+		10F6D5AC1868FF2000B95A87 /* 50526 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50526; sourceTree = "<group>"; };
+		10F6D5AD1868FF2000B95A87 /* 50527 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50527; sourceTree = "<group>"; };
+		10F6D5AE1868FF2000B95A87 /* 50536 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 50536; sourceTree = "<group>"; };
+		10F6D5AF1868FF2000B95A87 /* 51493 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51493; sourceTree = "<group>"; };
+		10F6D5B01868FF2000B95A87 /* 51543 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51543; sourceTree = "<group>"; };
+		10F6D5B11868FF2000B95A87 /* 51551 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51551; sourceTree = "<group>"; };
+		10F6D5B21868FF2000B95A87 /* 51595 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51595; sourceTree = "<group>"; };
+		10F6D5B31868FF2000B95A87 /* 51641 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51641; sourceTree = "<group>"; };
+		10F6D5B41868FF2000B95A87 /* 51688 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51688; sourceTree = "<group>"; };
+		10F6D5B51868FF2000B95A87 /* 51690 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51690; sourceTree = "<group>"; };
+		10F6D5B61868FF2000B95A87 /* 51693 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51693; sourceTree = "<group>"; };
+		10F6D5B71868FF2000B95A87 /* 51740 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51740; sourceTree = "<group>"; };
+		10F6D5B81868FF2000B95A87 /* 51769 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51769; sourceTree = "<group>"; };
+		10F6D5B91868FF2000B95A87 /* 51785 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51785; sourceTree = "<group>"; };
+		10F6D5BA1868FF2000B95A87 /* 51826 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51826; sourceTree = "<group>"; };
+		10F6D5BB1868FF2000B95A87 /* 51845 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51845; sourceTree = "<group>"; };
+		10F6D5BC1868FF2000B95A87 /* 51848 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51848; sourceTree = "<group>"; };
+		10F6D5BD1868FF2000B95A87 /* 51858 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51858; sourceTree = "<group>"; };
+		10F6D5BE1868FF2000B95A87 /* 51882 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51882; sourceTree = "<group>"; };
+		10F6D5BF1868FF2000B95A87 /* 51892 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 51892; sourceTree = "<group>"; };
+		10F6D5C01868FF2000B95A87 /* 52004 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52004; sourceTree = "<group>"; };
+		10F6D5C11868FF2000B95A87 /* 52015 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52015; sourceTree = "<group>"; };
+		10F6D5C21868FF2000B95A87 /* 52039 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52039; sourceTree = "<group>"; };
+		10F6D5C31868FF2000B95A87 /* 52132 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52132; sourceTree = "<group>"; };
+		10F6D5C41868FF2000B95A87 /* 52190 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52190; sourceTree = "<group>"; };
+		10F6D5C51868FF2000B95A87 /* 52260 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52260; sourceTree = "<group>"; };
+		10F6D5C61868FF2000B95A87 /* 52298 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52298; sourceTree = "<group>"; };
+		10F6D5C71868FF2000B95A87 /* 52309 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52309; sourceTree = "<group>"; };
+		10F6D5C81868FF2000B95A87 /* 52337 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 52337; sourceTree = "<group>"; };
+		635DF06419321BB70076D8E3 /* MacHardwarePost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacHardwarePost.h; sourceTree = "<group>"; };
+		635DF06519321BB70076D8E3 /* MacHardwarePost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacHardwarePost.m; sourceTree = "<group>"; };
+		635DF06819321DE10076D8E3 /* MacHardwareDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacHardwareDataParser.h; sourceTree = "<group>"; };
+		635DF06919321DE10076D8E3 /* MacHardwareDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacHardwareDataParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1054F286185CF80C000A5EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1054F28D185CF80C000A5EE5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1054F2A7185CF80D000A5EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1054F2AD185CF80D000A5EE5 /* Cocoa.framework in Frameworks */,
+				1054F2AC185CF80D000A5EE5 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		104690E9185DFD1B0032320B /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				104690EA185DFD290032320B /* PostCellView.h */,
+				104690EB185DFD290032320B /* PostCellView.m */,
+			);
+			name = CustomCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1054F280185CF80C000A5EE5 = {
+			isa = PBXGroup;
+			children = (
+				1054F292185CF80C000A5EE5 /* NSScannerTutorial */,
+				1054F2B0185CF80D000A5EE5 /* NSScannerTutorialTests */,
+				1054F28B185CF80C000A5EE5 /* Frameworks */,
+				1054F28A185CF80C000A5EE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1054F28A185CF80C000A5EE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1054F289185CF80C000A5EE5 /* NSScannerTutorial.app */,
+				1054F2AA185CF80D000A5EE5 /* NSScannerTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1054F28B185CF80C000A5EE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1054F28C185CF80C000A5EE5 /* Cocoa.framework */,
+				1054F2AB185CF80D000A5EE5 /* XCTest.framework */,
+				1054F28E185CF80C000A5EE5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1054F28E185CF80C000A5EE5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1054F28F185CF80C000A5EE5 /* AppKit.framework */,
+				1054F290185CF80C000A5EE5 /* CoreData.framework */,
+				1054F291185CF80C000A5EE5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1054F292185CF80C000A5EE5 /* NSScannerTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				10F6D5971868FF2000B95A87 /* comp.sys.mac.hardware */,
+				104690E9185DFD1B0032320B /* CustomCell */,
+				1054F325185DF92C000A5EE5 /* View Controller */,
+				635DF06319321B920076D8E3 /* Model */,
+				635DF06B19321DF70076D8E3 /* Parser */,
+				1054F29E185CF80C000A5EE5 /* AppDelegate.h */,
+				1054F29F185CF80C000A5EE5 /* AppDelegate.m */,
+				1054F2A1185CF80C000A5EE5 /* MainMenu.xib */,
+				1054F2A4185CF80C000A5EE5 /* Images.xcassets */,
+				1054F293185CF80C000A5EE5 /* Supporting Files */,
+			);
+			path = NSScannerTutorial;
+			sourceTree = "<group>";
+		};
+		1054F293185CF80C000A5EE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1054F294185CF80C000A5EE5 /* NSScannerTutorial-Info.plist */,
+				1054F295185CF80C000A5EE5 /* InfoPlist.strings */,
+				1054F298185CF80C000A5EE5 /* main.m */,
+				1054F29A185CF80C000A5EE5 /* NSScannerTutorial-Prefix.pch */,
+				1054F29B185CF80C000A5EE5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1054F2B0185CF80D000A5EE5 /* NSScannerTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				1054F2B6185CF80D000A5EE5 /* NSScannerTutorialTests.m */,
+				1054F2B1185CF80D000A5EE5 /* Supporting Files */,
+			);
+			path = NSScannerTutorialTests;
+			sourceTree = "<group>";
+		};
+		1054F2B1185CF80D000A5EE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1054F2B2185CF80D000A5EE5 /* NSScannerTutorialTests-Info.plist */,
+				1054F2B3185CF80D000A5EE5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1054F325185DF92C000A5EE5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1054F329185DFA2B000A5EE5 /* MasterViewController.h */,
+				1054F32A185DFA2B000A5EE5 /* MasterViewController.m */,
+				1054F32B185DFA2B000A5EE5 /* MasterViewController.xib */,
+			);
+			name = "View Controller";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		10F6D5971868FF2000B95A87 /* comp.sys.mac.hardware */ = {
+			isa = PBXGroup;
+			children = (
+				10F6D5981868FF2000B95A87 /* 50418 */,
+				10F6D5991868FF2000B95A87 /* 50421 */,
+				10F6D59A1868FF2000B95A87 /* 50424 */,
+				10F6D59B1868FF2000B95A87 /* 50432 */,
+				10F6D59C1868FF2000B95A87 /* 50437 */,
+				10F6D59D1868FF2000B95A87 /* 50442 */,
+				10F6D59E1868FF2000B95A87 /* 50447 */,
+				10F6D59F1868FF2000B95A87 /* 50450 */,
+				10F6D5A01868FF2000B95A87 /* 50459 */,
+				10F6D5A11868FF2000B95A87 /* 50464 */,
+				10F6D5A21868FF2000B95A87 /* 50469 */,
+				10F6D5A31868FF2000B95A87 /* 50470 */,
+				10F6D5A41868FF2000B95A87 /* 50471 */,
+				10F6D5A51868FF2000B95A87 /* 50478 */,
+				10F6D5A61868FF2000B95A87 /* 50479 */,
+				10F6D5A71868FF2000B95A87 /* 50503 */,
+				10F6D5A81868FF2000B95A87 /* 50511 */,
+				10F6D5A91868FF2000B95A87 /* 50514 */,
+				10F6D5AA1868FF2000B95A87 /* 50519 */,
+				10F6D5AB1868FF2000B95A87 /* 50523 */,
+				10F6D5AC1868FF2000B95A87 /* 50526 */,
+				10F6D5AD1868FF2000B95A87 /* 50527 */,
+				10F6D5AE1868FF2000B95A87 /* 50536 */,
+				10F6D5AF1868FF2000B95A87 /* 51493 */,
+				10F6D5B01868FF2000B95A87 /* 51543 */,
+				10F6D5B11868FF2000B95A87 /* 51551 */,
+				10F6D5B21868FF2000B95A87 /* 51595 */,
+				10F6D5B31868FF2000B95A87 /* 51641 */,
+				10F6D5B41868FF2000B95A87 /* 51688 */,
+				10F6D5B51868FF2000B95A87 /* 51690 */,
+				10F6D5B61868FF2000B95A87 /* 51693 */,
+				10F6D5B71868FF2000B95A87 /* 51740 */,
+				10F6D5B81868FF2000B95A87 /* 51769 */,
+				10F6D5B91868FF2000B95A87 /* 51785 */,
+				10F6D5BA1868FF2000B95A87 /* 51826 */,
+				10F6D5BB1868FF2000B95A87 /* 51845 */,
+				10F6D5BC1868FF2000B95A87 /* 51848 */,
+				10F6D5BD1868FF2000B95A87 /* 51858 */,
+				10F6D5BE1868FF2000B95A87 /* 51882 */,
+				10F6D5BF1868FF2000B95A87 /* 51892 */,
+				10F6D5C01868FF2000B95A87 /* 52004 */,
+				10F6D5C11868FF2000B95A87 /* 52015 */,
+				10F6D5C21868FF2000B95A87 /* 52039 */,
+				10F6D5C31868FF2000B95A87 /* 52132 */,
+				10F6D5C41868FF2000B95A87 /* 52190 */,
+				10F6D5C51868FF2000B95A87 /* 52260 */,
+				10F6D5C61868FF2000B95A87 /* 52298 */,
+				10F6D5C71868FF2000B95A87 /* 52309 */,
+				10F6D5C81868FF2000B95A87 /* 52337 */,
+			);
+			name = comp.sys.mac.hardware;
+			path = comp.sys.mac.hadware;
+			sourceTree = "<group>";
+		};
+		635DF06319321B920076D8E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				635DF06419321BB70076D8E3 /* MacHardwarePost.h */,
+				635DF06519321BB70076D8E3 /* MacHardwarePost.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		635DF06B19321DF70076D8E3 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				635DF06819321DE10076D8E3 /* MacHardwareDataParser.h */,
+				635DF06919321DE10076D8E3 /* MacHardwareDataParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1054F288185CF80C000A5EE5 /* NSScannerTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1054F2BA185CF80D000A5EE5 /* Build configuration list for PBXNativeTarget "NSScannerTutorial" */;
+			buildPhases = (
+				1054F285185CF80C000A5EE5 /* Sources */,
+				1054F286185CF80C000A5EE5 /* Frameworks */,
+				1054F287185CF80C000A5EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSScannerTutorial;
+			productName = NSScannerTutorial;
+			productReference = 1054F289185CF80C000A5EE5 /* NSScannerTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1054F2A9185CF80D000A5EE5 /* NSScannerTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1054F2BD185CF80D000A5EE5 /* Build configuration list for PBXNativeTarget "NSScannerTutorialTests" */;
+			buildPhases = (
+				1054F2A6185CF80D000A5EE5 /* Sources */,
+				1054F2A7185CF80D000A5EE5 /* Frameworks */,
+				1054F2A8185CF80D000A5EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1054F2AF185CF80D000A5EE5 /* PBXTargetDependency */,
+			);
+			name = NSScannerTutorialTests;
+			productName = NSScannerTutorialTests;
+			productReference = 1054F2AA185CF80D000A5EE5 /* NSScannerTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1054F281185CF80C000A5EE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Vincent Ngo";
+				TargetAttributes = {
+					1054F2A9185CF80D000A5EE5 = {
+						TestTargetID = 1054F288185CF80C000A5EE5;
+					};
+				};
+			};
+			buildConfigurationList = 1054F284185CF80C000A5EE5 /* Build configuration list for PBXProject "NSScannerTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1054F280185CF80C000A5EE5;
+			productRefGroup = 1054F28A185CF80C000A5EE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1054F288185CF80C000A5EE5 /* NSScannerTutorial */,
+				1054F2A9185CF80D000A5EE5 /* NSScannerTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1054F287185CF80C000A5EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F6D5E41868FF2000B95A87 /* 51641 in Resources */,
+				10F6D5EC1868FF2000B95A87 /* 51845 in Resources */,
+				10F6D5D81868FF2000B95A87 /* 50503 in Resources */,
+				10F6D5DA1868FF2000B95A87 /* 50514 in Resources */,
+				10F6D5F11868FF2000B95A87 /* 52004 in Resources */,
+				10F6D5D51868FF2000B95A87 /* 50471 in Resources */,
+				10F6D5D21868FF2000B95A87 /* 50464 in Resources */,
+				10F6D5F71868FF2000B95A87 /* 52298 in Resources */,
+				10F6D5CE1868FF2000B95A87 /* 50442 in Resources */,
+				10F6D5F51868FF2000B95A87 /* 52190 in Resources */,
+				10F6D5E01868FF2000B95A87 /* 51493 in Resources */,
+				10F6D5DD1868FF2000B95A87 /* 50526 in Resources */,
+				1054F32D185DFA2B000A5EE5 /* MasterViewController.xib in Resources */,
+				10F6D5D41868FF2000B95A87 /* 50470 in Resources */,
+				10F6D5D11868FF2000B95A87 /* 50459 in Resources */,
+				10F6D5E51868FF2000B95A87 /* 51688 in Resources */,
+				10F6D5E21868FF2000B95A87 /* 51551 in Resources */,
+				10F6D5D71868FF2000B95A87 /* 50479 in Resources */,
+				10F6D5DB1868FF2000B95A87 /* 50519 in Resources */,
+				1054F297185CF80C000A5EE5 /* InfoPlist.strings in Resources */,
+				10F6D5E31868FF2000B95A87 /* 51595 in Resources */,
+				1054F2A5185CF80C000A5EE5 /* Images.xcassets in Resources */,
+				10F6D5CC1868FF2000B95A87 /* 50432 in Resources */,
+				10F6D5F21868FF2000B95A87 /* 52015 in Resources */,
+				10F6D5EB1868FF2000B95A87 /* 51826 in Resources */,
+				10F6D5D91868FF2000B95A87 /* 50511 in Resources */,
+				10F6D5F31868FF2000B95A87 /* 52039 in Resources */,
+				10F6D5C91868FF2000B95A87 /* 50418 in Resources */,
+				10F6D5F81868FF2000B95A87 /* 52309 in Resources */,
+				10F6D5E91868FF2000B95A87 /* 51769 in Resources */,
+				10F6D5D01868FF2000B95A87 /* 50450 in Resources */,
+				10F6D5CB1868FF2000B95A87 /* 50424 in Resources */,
+				10F6D5F41868FF2000B95A87 /* 52132 in Resources */,
+				10F6D5F91868FF2000B95A87 /* 52337 in Resources */,
+				10F6D5DE1868FF2000B95A87 /* 50527 in Resources */,
+				10F6D5CD1868FF2000B95A87 /* 50437 in Resources */,
+				10F6D5E11868FF2000B95A87 /* 51543 in Resources */,
+				10F6D5E81868FF2000B95A87 /* 51740 in Resources */,
+				10F6D5DF1868FF2000B95A87 /* 50536 in Resources */,
+				1054F29D185CF80C000A5EE5 /* Credits.rtf in Resources */,
+				10F6D5EA1868FF2000B95A87 /* 51785 in Resources */,
+				10F6D5EF1868FF2000B95A87 /* 51882 in Resources */,
+				10F6D5ED1868FF2000B95A87 /* 51848 in Resources */,
+				10F6D5CF1868FF2000B95A87 /* 50447 in Resources */,
+				10F6D5E61868FF2000B95A87 /* 51690 in Resources */,
+				10F6D5DC1868FF2000B95A87 /* 50523 in Resources */,
+				10F6D5D31868FF2000B95A87 /* 50469 in Resources */,
+				10F6D5F01868FF2000B95A87 /* 51892 in Resources */,
+				10F6D5D61868FF2000B95A87 /* 50478 in Resources */,
+				10F6D5EE1868FF2000B95A87 /* 51858 in Resources */,
+				10F6D5E71868FF2000B95A87 /* 51693 in Resources */,
+				10F6D5F61868FF2000B95A87 /* 52260 in Resources */,
+				1054F2A3185CF80C000A5EE5 /* MainMenu.xib in Resources */,
+				10F6D5CA1868FF2000B95A87 /* 50421 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1054F2A8185CF80D000A5EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1054F2B5185CF80D000A5EE5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1054F285185CF80C000A5EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635DF06A19321DE10076D8E3 /* MacHardwareDataParser.m in Sources */,
+				1054F32C185DFA2B000A5EE5 /* MasterViewController.m in Sources */,
+				1054F2A0185CF80C000A5EE5 /* AppDelegate.m in Sources */,
+				104690EC185DFD290032320B /* PostCellView.m in Sources */,
+				635DF06619321BB70076D8E3 /* MacHardwarePost.m in Sources */,
+				1054F299185CF80C000A5EE5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1054F2A6185CF80D000A5EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1054F2B7185CF80D000A5EE5 /* NSScannerTutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1054F2AF185CF80D000A5EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1054F288185CF80C000A5EE5 /* NSScannerTutorial */;
+			targetProxy = 1054F2AE185CF80D000A5EE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1054F295185CF80C000A5EE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1054F296185CF80C000A5EE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1054F29B185CF80C000A5EE5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1054F29C185CF80C000A5EE5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1054F2A1185CF80C000A5EE5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1054F2A2185CF80C000A5EE5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1054F2B3185CF80D000A5EE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1054F2B4185CF80D000A5EE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1054F2B8185CF80D000A5EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1054F2B9185CF80D000A5EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1054F2BB185CF80D000A5EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSScannerTutorial/NSScannerTutorial-Prefix.pch";
+				INFOPLIST_FILE = "NSScannerTutorial/NSScannerTutorial-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1054F2BC185CF80D000A5EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSScannerTutorial/NSScannerTutorial-Prefix.pch";
+				INFOPLIST_FILE = "NSScannerTutorial/NSScannerTutorial-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1054F2BE185CF80D000A5EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSScannerTutorial.app/Contents/MacOS/NSScannerTutorial";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSScannerTutorial/NSScannerTutorial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSScannerTutorialTests/NSScannerTutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1054F2BF185CF80D000A5EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSScannerTutorial.app/Contents/MacOS/NSScannerTutorial";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSScannerTutorial/NSScannerTutorial-Prefix.pch";
+				INFOPLIST_FILE = "NSScannerTutorialTests/NSScannerTutorialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1054F284185CF80C000A5EE5 /* Build configuration list for PBXProject "NSScannerTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1054F2B8185CF80D000A5EE5 /* Debug */,
+				1054F2B9185CF80D000A5EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1054F2BA185CF80D000A5EE5 /* Build configuration list for PBXNativeTarget "NSScannerTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1054F2BB185CF80D000A5EE5 /* Debug */,
+				1054F2BC185CF80D000A5EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1054F2BD185CF80D000A5EE5 /* Build configuration list for PBXNativeTarget "NSScannerTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1054F2BE185CF80D000A5EE5 /* Debug */,
+				1054F2BF185CF80D000A5EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1054F281185CF80C000A5EE5 /* Project object */;
+}
