@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6B6DE9D2-233B-4050-92B7-64C45C73E38B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GiftLister</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F3B4EA1A-DC03-417E-9162-9C43BF5ADE3A</key>
+		<string>https://github.com/russosx/courses.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/ray/GiftLister/GiftLister.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F3B4EA1A-DC03-417E-9162-9C43BF5ADE3A</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/russosx/courses.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F3B4EA1A-DC03-417E-9162-9C43BF5ADE3A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F3B4EA1A-DC03-417E-9162-9C43BF5ADE3A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>courses</string>
+		</dict>
+	</array>
+</dict>
+</plist>

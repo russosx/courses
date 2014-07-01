@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3132438167D03BC00D44656 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3132437167D03BC00D44656 /* UIKit.framework */; };
+		D313243A167D03BC00D44656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3132439167D03BC00D44656 /* Foundation.framework */; };
+		D313243C167D03BC00D44656 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D313243B167D03BC00D44656 /* CoreGraphics.framework */; };
+		D3132442167D03BC00D44656 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3132440167D03BC00D44656 /* InfoPlist.strings */; };
+		D3132444167D03BC00D44656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3132443167D03BC00D44656 /* main.m */; };
+		D3132448167D03BC00D44656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3132447167D03BC00D44656 /* AppDelegate.m */; };
+		D313244A167D03BC00D44656 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3132449167D03BC00D44656 /* Default.png */; };
+		D313244C167D03BC00D44656 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D313244B167D03BC00D44656 /* Default@2x.png */; };
+		D313244E167D03BC00D44656 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D313244D167D03BC00D44656 /* Default-568h@2x.png */; };
+		D3132451167D03BC00D44656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D313244F167D03BC00D44656 /* Main.storyboard */; };
+		D3132454167D03BC00D44656 /* FriendSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3132453167D03BC00D44656 /* FriendSelectionViewController.m */; };
+		D313245C167D052400D44656 /* GiftLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D313245A167D052400D44656 /* GiftLister.xcdatamodeld */; };
+		D313245F167D058A00D44656 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D313245E167D058A00D44656 /* DataStore.m */; };
+		D3132461167D067100D44656 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3132460167D067100D44656 /* CoreData.framework */; };
+		D3132464167D12ED00D44656 /* FriendListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3132463167D12ED00D44656 /* FriendListCell.m */; };
+		D3132467167D152100D44656 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = D3132466167D152100D44656 /* Friend.m */; };
+		D313246E167D43BD00D44656 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D313246C167D43BD00D44656 /* background@2x.png */; };
+		D3132470167D43FE00D44656 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D313246F167D43FE00D44656 /* background.png */; };
+		D3132473167D488700D44656 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D3132471167D488700D44656 /* logo.png */; };
+		D3132474167D488700D44656 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3132472167D488700D44656 /* logo@2x.png */; };
+		D3C25FD4167E0B1900B06593 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C25FD3167E0B1900B06593 /* AddFriendViewController.m */; };
+		D3C25FD7167E622C00B06593 /* GiftListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C25FD6167E622C00B06593 /* GiftListViewController.m */; };
+		D3C25FDC167E75CF00B06593 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C25FDB167E75CF00B06593 /* Gift.m */; };
+		D3C25FDE167EA0C500B06593 /* crate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C25FDD167EA0C500B06593 /* crate@2x.png */; };
+		D3C25FE0167EA0D100B06593 /* crate.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C25FDF167EA0D100B06593 /* crate.png */; };
+		D3C25FE3167ECB2200B06593 /* AddGiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C25FE2167ECB2200B06593 /* AddGiftViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3132433167D03BC00D44656 /* GiftLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3132437167D03BC00D44656 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3132439167D03BC00D44656 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D313243B167D03BC00D44656 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D313243F167D03BC00D44656 /* GiftLister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GiftLister-Info.plist"; sourceTree = "<group>"; };
+		D3132441167D03BC00D44656 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3132443167D03BC00D44656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3132445167D03BC00D44656 /* GiftLister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GiftLister-Prefix.pch"; sourceTree = "<group>"; };
+		D3132446167D03BC00D44656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3132447167D03BC00D44656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3132449167D03BC00D44656 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D313244B167D03BC00D44656 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D313244D167D03BC00D44656 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D3132450167D03BC00D44656 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3132452167D03BC00D44656 /* FriendSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendSelectionViewController.h; sourceTree = "<group>"; };
+		D3132453167D03BC00D44656 /* FriendSelectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendSelectionViewController.m; sourceTree = "<group>"; };
+		D313245B167D052400D44656 /* GiftLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiftLister.xcdatamodel; sourceTree = "<group>"; };
+		D313245D167D058A00D44656 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStore.h; path = ../DataStore.h; sourceTree = "<group>"; };
+		D313245E167D058A00D44656 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStore.m; path = ../DataStore.m; sourceTree = "<group>"; };
+		D3132460167D067100D44656 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D3132462167D12ED00D44656 /* FriendListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListCell.h; sourceTree = "<group>"; };
+		D3132463167D12ED00D44656 /* FriendListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListCell.m; sourceTree = "<group>"; };
+		D3132465167D152100D44656 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		D3132466167D152100D44656 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		D313246C167D43BD00D44656 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		D313246F167D43FE00D44656 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D3132471167D488700D44656 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		D3132472167D488700D44656 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		D3C25FD2167E0B1800B06593 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		D3C25FD3167E0B1900B06593 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		D3C25FD5167E622C00B06593 /* GiftListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftListViewController.h; sourceTree = "<group>"; };
+		D3C25FD6167E622C00B06593 /* GiftListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftListViewController.m; sourceTree = "<group>"; };
+		D3C25FD9167E6C3A00B06593 /* clear-db.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "clear-db.sh"; sourceTree = "<group>"; };
+		D3C25FDA167E75CF00B06593 /* Gift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gift.h; sourceTree = "<group>"; };
+		D3C25FDB167E75CF00B06593 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
+		D3C25FDD167EA0C500B06593 /* crate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crate@2x.png"; sourceTree = "<group>"; };
+		D3C25FDF167EA0D100B06593 /* crate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crate.png; sourceTree = "<group>"; };
+		D3C25FE1167ECB2200B06593 /* AddGiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGiftViewController.h; sourceTree = "<group>"; };
+		D3C25FE2167ECB2200B06593 /* AddGiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGiftViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3132430167D03BC00D44656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3132461167D067100D44656 /* CoreData.framework in Frameworks */,
+				D3132438167D03BC00D44656 /* UIKit.framework in Frameworks */,
+				D313243A167D03BC00D44656 /* Foundation.framework in Frameworks */,
+				D313243C167D03BC00D44656 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D30255051680CCF1006C45D9 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D313245D167D058A00D44656 /* DataStore.h */,
+				D313245E167D058A00D44656 /* DataStore.m */,
+				D3132465167D152100D44656 /* Friend.h */,
+				D3132466167D152100D44656 /* Friend.m */,
+				D3C25FDA167E75CF00B06593 /* Gift.h */,
+				D3C25FDB167E75CF00B06593 /* Gift.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		D3132428167D03BC00D44656 = {
+			isa = PBXGroup;
+			children = (
+				D313243D167D03BC00D44656 /* GiftLister */,
+				D3132436167D03BC00D44656 /* Frameworks */,
+				D3132434167D03BC00D44656 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3132434167D03BC00D44656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3132433167D03BC00D44656 /* GiftLister.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3132436167D03BC00D44656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3132460167D067100D44656 /* CoreData.framework */,
+				D3132437167D03BC00D44656 /* UIKit.framework */,
+				D3132439167D03BC00D44656 /* Foundation.framework */,
+				D313243B167D03BC00D44656 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D313243D167D03BC00D44656 /* GiftLister */ = {
+			isa = PBXGroup;
+			children = (
+				D30255051680CCF1006C45D9 /* Core Data */,
+				D3C25FD8167E6C2300B06593 /* Shell */,
+				D3132446167D03BC00D44656 /* AppDelegate.h */,
+				D3132447167D03BC00D44656 /* AppDelegate.m */,
+				D313244F167D03BC00D44656 /* Main.storyboard */,
+				D3C25FD2167E0B1800B06593 /* AddFriendViewController.h */,
+				D3C25FD3167E0B1900B06593 /* AddFriendViewController.m */,
+				D3132452167D03BC00D44656 /* FriendSelectionViewController.h */,
+				D3132453167D03BC00D44656 /* FriendSelectionViewController.m */,
+				D3C25FD5167E622C00B06593 /* GiftListViewController.h */,
+				D3C25FD6167E622C00B06593 /* GiftListViewController.m */,
+				D3C25FE1167ECB2200B06593 /* AddGiftViewController.h */,
+				D3C25FE2167ECB2200B06593 /* AddGiftViewController.m */,
+				D3132462167D12ED00D44656 /* FriendListCell.h */,
+				D3132463167D12ED00D44656 /* FriendListCell.m */,
+				D3132475167D70DD00D44656 /* Images */,
+				D313243E167D03BC00D44656 /* Supporting Files */,
+			);
+			path = GiftLister;
+			sourceTree = "<group>";
+		};
+		D313243E167D03BC00D44656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D313243F167D03BC00D44656 /* GiftLister-Info.plist */,
+				D3132440167D03BC00D44656 /* InfoPlist.strings */,
+				D3132443167D03BC00D44656 /* main.m */,
+				D3132445167D03BC00D44656 /* GiftLister-Prefix.pch */,
+				D3132449167D03BC00D44656 /* Default.png */,
+				D313244B167D03BC00D44656 /* Default@2x.png */,
+				D313244D167D03BC00D44656 /* Default-568h@2x.png */,
+				D313245A167D052400D44656 /* GiftLister.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3132475167D70DD00D44656 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D3132477167D70F100D44656 /* Standard */,
+				D3132476167D70E800D44656 /* Retina */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D3132476167D70E800D44656 /* Retina */ = {
+			isa = PBXGroup;
+			children = (
+				D3C25FDD167EA0C500B06593 /* crate@2x.png */,
+				D3132472167D488700D44656 /* logo@2x.png */,
+				D313246C167D43BD00D44656 /* background@2x.png */,
+			);
+			name = Retina;
+			sourceTree = "<group>";
+		};
+		D3132477167D70F100D44656 /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				D3C25FDF167EA0D100B06593 /* crate.png */,
+				D3132471167D488700D44656 /* logo.png */,
+				D313246F167D43FE00D44656 /* background.png */,
+			);
+			name = Standard;
+			sourceTree = "<group>";
+		};
+		D3C25FD8167E6C2300B06593 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				D3C25FD9167E6C3A00B06593 /* clear-db.sh */,
+			);
+			name = Shell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3132432167D03BC00D44656 /* GiftLister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3132457167D03BC00D44656 /* Build configuration list for PBXNativeTarget "GiftLister" */;
+			buildPhases = (
+				D313242F167D03BC00D44656 /* Sources */,
+				D3132430167D03BC00D44656 /* Frameworks */,
+				D3132431167D03BC00D44656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiftLister;
+			productName = GiftLister;
+			productReference = D3132433167D03BC00D44656 /* GiftLister.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D313242A167D03BC00D44656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = D313242D167D03BC00D44656 /* Build configuration list for PBXProject "GiftLister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3132428167D03BC00D44656;
+			productRefGroup = D3132434167D03BC00D44656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3132432167D03BC00D44656 /* GiftLister */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3132431167D03BC00D44656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3132442167D03BC00D44656 /* InfoPlist.strings in Resources */,
+				D313244A167D03BC00D44656 /* Default.png in Resources */,
+				D313244C167D03BC00D44656 /* Default@2x.png in Resources */,
+				D313244E167D03BC00D44656 /* Default-568h@2x.png in Resources */,
+				D3132451167D03BC00D44656 /* Main.storyboard in Resources */,
+				D313246E167D43BD00D44656 /* background@2x.png in Resources */,
+				D3132470167D43FE00D44656 /* background.png in Resources */,
+				D3132473167D488700D44656 /* logo.png in Resources */,
+				D3132474167D488700D44656 /* logo@2x.png in Resources */,
+				D3C25FDE167EA0C500B06593 /* crate@2x.png in Resources */,
+				D3C25FE0167EA0D100B06593 /* crate.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D313242F167D03BC00D44656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3132444167D03BC00D44656 /* main.m in Sources */,
+				D3132448167D03BC00D44656 /* AppDelegate.m in Sources */,
+				D3132454167D03BC00D44656 /* FriendSelectionViewController.m in Sources */,
+				D313245C167D052400D44656 /* GiftLister.xcdatamodeld in Sources */,
+				D313245F167D058A00D44656 /* DataStore.m in Sources */,
+				D3132464167D12ED00D44656 /* FriendListCell.m in Sources */,
+				D3132467167D152100D44656 /* Friend.m in Sources */,
+				D3C25FD4167E0B1900B06593 /* AddFriendViewController.m in Sources */,
+				D3C25FD7167E622C00B06593 /* GiftListViewController.m in Sources */,
+				D3C25FDC167E75CF00B06593 /* Gift.m in Sources */,
+				D3C25FE3167ECB2200B06593 /* AddGiftViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3132440167D03BC00D44656 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3132441167D03BC00D44656 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D313244F167D03BC00D44656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3132450167D03BC00D44656 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3132455167D03BC00D44656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3132456167D03BC00D44656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3132458167D03BC00D44656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GiftLister/GiftLister-Prefix.pch";
+				INFOPLIST_FILE = "GiftLister/GiftLister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3132459167D03BC00D44656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GiftLister/GiftLister-Prefix.pch";
+				INFOPLIST_FILE = "GiftLister/GiftLister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D313242D167D03BC00D44656 /* Build configuration list for PBXProject "GiftLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3132455167D03BC00D44656 /* Debug */,
+				D3132456167D03BC00D44656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3132457167D03BC00D44656 /* Build configuration list for PBXNativeTarget "GiftLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3132458167D03BC00D44656 /* Debug */,
+				D3132459167D03BC00D44656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D313245A167D052400D44656 /* GiftLister.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D313245B167D052400D44656 /* GiftLister.xcdatamodel */,
+			);
+			currentVersion = D313245B167D052400D44656 /* GiftLister.xcdatamodel */;
+			path = GiftLister.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D313242A167D03BC00D44656 /* Project object */;
+}
