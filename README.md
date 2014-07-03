@@ -1,4 +1,4 @@
 Courses
 =======
 
-Always learning.
+Live and Learn.
