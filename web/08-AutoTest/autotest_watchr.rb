@@ -31,8 +31,8 @@ def notify title, msg, img, show_time
 end
 
 def notify_failed cmd, result
-  failed_examples = result.scan(/failure:\n\n(.*)\n/)
-  notify "#{cmd}", failed_examples[0], "attention-icon.png", 6000
+  # failed_examples = result.scan(/failure:\n\n(.*)\n/)
+  notify "#{cmd}", "Tests failed", "attention-icon.png", 6000
 end
 
 def clear_console
