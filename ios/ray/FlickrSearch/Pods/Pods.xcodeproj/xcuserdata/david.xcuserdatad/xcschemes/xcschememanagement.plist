@@ -8,29 +8,65 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-objectiveflickr.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>629828BB31F146319175AB3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5B1D9252D4341908D8D0039</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B7DABBC81B8346DF807A4833</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF979088BD1F4E188502A54B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E629030998714B9D9259FF11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -48,7 +48,7 @@ largest
 largestKind
 
 var firstForLoop = 0
-for i in 0..3 {
+for i in 0..<3 {
     firstForLoop += i
 }
 firstForLoop
@@ -113,7 +113,7 @@ increment(7)
 
 // Functional programming
 
-func hasAnyMatches(list: Int[], condition: Int -> Bool) -> Bool {
+func hasAnyMatches(list: [Int], condition: Int -> Bool) -> Bool {
     for item in list {
         if condition(item) {
             return true
@@ -147,7 +147,7 @@ numbers.map({
 let map1 = numbers.map({number in 3 * number})
 map1
 
-let sort1 = sort([1, 5, 3, 12, 2]) { $0 > $1 }
-sort1
+//let sort1 = sort([1, 5, 3, 12, 2]) { $0 > $1 }
+//sort1
 
 
