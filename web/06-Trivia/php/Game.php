@@ -1,6 +1,6 @@
 <?php
 
-function echoln($string) {
+function echoLine($string) {
     echo $string . "\n";
 }
 
@@ -51,8 +51,8 @@ class Game
         $this->purses[$this->howManyPlayers() ] = 0;
         $this->inPenaltyBox[$this->howManyPlayers() ] = false;
         
-        echoln($playerName . " was added");
-        echoln("They are player number " . count($this->players));
+        echoLine($playerName . " was added");
+        echoLine("They are player number " . count($this->players));
         return true;
     }
     
@@ -61,44 +61,43 @@ class Game
     }
     
     function roll($roll) {
-        echoln($this->players[$this->currentPlayer] . " is the current player");
-        echoln("They have rolled a " . $roll);
+        echoLine($this->players[$this->currentPlayer] . " is the current player");
+        echoLine("They have rolled a " . $roll);
         
 		$boardSize = 12;
-        $lastPlaceOnTheBoard = 11;
         if ($this->inPenaltyBox[$this->currentPlayer]) {
-            if ($roll % 2 != 0) {
+            if ($this->isOdd($roll)) {
                 $this->isGettingOutOfPenaltyBox = true;
                 
-                echoln($this->players[$this->currentPlayer] . " is getting out of the penalty box");
+                echoLine($this->players[$this->currentPlayer] . " is getting out of the penalty box");
                 $this->places[$this->currentPlayer] = $this->places[$this->currentPlayer] + $roll;
-                if ($this->places[$this->currentPlayer] > $lastPlaceOnTheBoard)
+                if ($this->playerShouldStartANewLap())
                 	$this->places[$this->currentPlayer] = $this->places[$this->currentPlayer] - $boardSize;
                 
-                echoln($this->players[$this->currentPlayer] . "'s new location is " . $this->places[$this->currentPlayer]);
-                echoln("The category is " . $this->currentCategory());
+                echoLine($this->players[$this->currentPlayer] . "'s new location is " . $this->places[$this->currentPlayer]);
+                echoLine("The category is " . $this->currentCategory());
                 $this->askQuestion();
             } else {
-                echoln($this->players[$this->currentPlayer] . " is not getting out of the penalty box");
+                echoLine($this->players[$this->currentPlayer] . " is not getting out of the penalty box");
                 $this->isGettingOutOfPenaltyBox = false;
             }
         } else {
             
             $this->places[$this->currentPlayer] = $this->places[$this->currentPlayer] + $roll;
-            if ($this->places[$this->currentPlayer] > $lastPlaceOnTheBoard)
+            if ($this->playerShouldStartANewLap())
             	$this->places[$this->currentPlayer] = $this->places[$this->currentPlayer] - $boardSize;
             
-            echoln($this->players[$this->currentPlayer] . "'s new location is " . $this->places[$this->currentPlayer]);
-            echoln("The category is " . $this->currentCategory());
+            echoLine($this->players[$this->currentPlayer] . "'s new location is " . $this->places[$this->currentPlayer]);
+            echoLine("The category is " . $this->currentCategory());
             $this->askQuestion();
         }
     }
     
     function askQuestion() {
-        if ($this->currentCategory() == "Pop") echoln(array_shift($this->popQuestions));
-        if ($this->currentCategory() == "Science") echoln(array_shift($this->scienceQuestions));
-        if ($this->currentCategory() == "Sports") echoln(array_shift($this->sportsQuestions));
-        if ($this->currentCategory() == "Rock") echoln(array_shift($this->rockQuestions));
+        if ($this->currentCategory() == "Pop") echoLine(array_shift($this->popQuestions));
+        if ($this->currentCategory() == "Science") echoLine(array_shift($this->scienceQuestions));
+        if ($this->currentCategory() == "Sports") echoLine(array_shift($this->sportsQuestions));
+        if ($this->currentCategory() == "Rock") echoLine(array_shift($this->rockQuestions));
     }
     
     function currentCategory() {
@@ -121,46 +120,69 @@ class Game
     function wasCorrectlyAnswered() {
         if ($this->inPenaltyBox[$this->currentPlayer]) {
             if ($this->isGettingOutOfPenaltyBox) {
-                echoln("Answer was correct!!!!");
+                echoLine("Answer was correct!!!!");
                 $this->purses[$this->currentPlayer]++;
-                echoln($this->players[$this->currentPlayer] . " now has " . $this->purses[$this->currentPlayer] . " Gold Coins.");
+                echoLine($this->players[$this->currentPlayer] . " now has " . $this->purses[$this->currentPlayer] . " Gold Coins.");
                 
                 $winner = $this->didPlayerWin();
                 $this->currentPlayer++;
-                if ($this->currentPlayer == count($this->players)) $this->currentPlayer = 0;
+                if ($this->shouldResetCurrentPlayer()) $this->currentPlayer = 0;
                 
                 return $winner;
             } else {
                 $this->currentPlayer++;
-                if ($this->currentPlayer == count($this->players)) $this->currentPlayer = 0;
+                if ($this->shouldResetCurrentPlayer()) $this->currentPlayer = 0;
                 return true;
             }
         } else {
             
-            echoln("Answer was corrent!!!!");
+            echoLine("Answer was corrent!!!!");
             $this->purses[$this->currentPlayer]++;
-            echoln($this->players[$this->currentPlayer] . " now has " . $this->purses[$this->currentPlayer] . " Gold Coins.");
+            echoLine($this->players[$this->currentPlayer] . " now has " . $this->purses[$this->currentPlayer] . " Gold Coins.");
             
             $winner = $this->didPlayerWin();
             $this->currentPlayer++;
-            if ($this->currentPlayer == count($this->players)) $this->currentPlayer = 0;
+            if ($this->shouldResetCurrentPlayer()) $this->currentPlayer = 0;
             
             return $winner;
         }
     }
     
     function wrongAnswer() {
-        echoln("Question was incorrectly answered");
-        echoln($this->players[$this->currentPlayer] . " was sent to the penalty box");
+        echoLine("Question was incorrectly answered");
+        echoLine($this->players[$this->currentPlayer] . " was sent to the penalty box");
         $this->inPenaltyBox[$this->currentPlayer] = true;
         
         $this->currentPlayer++;
-        if ($this->currentPlayer == count($this->players)) $this->currentPlayer = 0;
+        if ($this->shouldResetCurrentPlayer()) $this->currentPlayer = 0;
         return true;
     }
     
     function didPlayerWin() {
     	$winningCoinCount = 6;
         return !($this->purses[$this->currentPlayer] == $winningCoinCount);
+    }
+
+    protected function isOdd($roll)
+    {
+        return $roll % 2 != 0;
+    }
+
+    /**
+     * @param $lastPlaceOnTheBoard
+     * @return bool
+     */
+    protected function playerShouldStartANewLap()
+    {
+        $lastPlaceOnTheBoard = 11;
+        return $this->places[$this->currentPlayer] > $lastPlaceOnTheBoard;
+    }
+
+    /**
+     * @return bool
+     */
+    protected function shouldResetCurrentPlayer()
+    {
+        return $this->currentPlayer == count($this->players);
     }
 }

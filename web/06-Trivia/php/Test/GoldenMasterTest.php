@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/../GameRunner.php';
+
 class GoldenMasterTest extends PHPUnit_Framework_TestCase
 {
     
@@ -13,7 +15,7 @@ class GoldenMasterTest extends PHPUnit_Framework_TestCase
     protected function generateOutput($seed) {
         ob_start();
         srand($seed);
-        require __DIR__ . '/../GameRunner.php';
+        run();
         $output = ob_get_contents();
         ob_end_clean();
         return $output;
@@ -32,11 +34,11 @@ class GoldenMasterTest extends PHPUnit_Framework_TestCase
         }
     }
 
-    function testGenerateOutput() {
-        // $times = 20000;
-        $this->markTestSkipped();
-        $this->generateMany($this->times, $this->gmPath);
-    }
+//    function testGenerateOutput() {
+//        // $times = 20000;
+//        $this->markTestSkipped();
+//        $this->generateMany($this->times, $this->gmPath);
+//    }
  
     function testOutputMatchesGoldenMaster() {
         // $times = 20000;
