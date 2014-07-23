@@ -6,6 +6,9 @@ function echoLine($string) {
 
 class Game
 {
+    static $minimumNumberOfPlayers = 2;
+    static $numberOfCoinsToWin = 6;
+
     var $players;
     var $places;
     var $purses;
@@ -42,14 +45,12 @@ class Game
     
     function isPlayable() {
     	$minimumNumberOfPlayers = 2;
-        return ($this->howManyPlayers() >= $minimumNumberOfPlayers);
+        return ($this->howManyPlayers() >= self::$minimumNumberOfPlayers);
     }
     
     function add($playerName) {
         array_push($this->players, $playerName);
-        $this->places[$this->howManyPlayers() ] = 0;
-        $this->purses[$this->howManyPlayers() ] = 0;
-        $this->inPenaltyBox[$this->howManyPlayers() ] = false;
+        $this->setDefaultPlayerParametersFor($this->howManyPlayers());
         
         echoLine($playerName . " was added");
         echoLine("They are player number " . count($this->players));
@@ -124,7 +125,7 @@ class Game
                 $this->purses[$this->currentPlayer]++;
                 echoLine($this->players[$this->currentPlayer] . " now has " . $this->purses[$this->currentPlayer] . " Gold Coins.");
                 
-                $winner = $this->didPlayerWin();
+                $winner = !$this->didPlayerNotWin();
                 $this->currentPlayer++;
                 if ($this->shouldResetCurrentPlayer()) $this->currentPlayer = 0;
                 
@@ -140,7 +141,7 @@ class Game
             $this->purses[$this->currentPlayer]++;
             echoLine($this->players[$this->currentPlayer] . " now has " . $this->purses[$this->currentPlayer] . " Gold Coins.");
             
-            $winner = $this->didPlayerWin();
+            $winner = !$this->didPlayerNotWin();
             $this->currentPlayer++;
             if ($this->shouldResetCurrentPlayer()) $this->currentPlayer = 0;
             
@@ -158,9 +159,8 @@ class Game
         return true;
     }
     
-    function didPlayerWin() {
-    	$winningCoinCount = 6;
-        return !($this->purses[$this->currentPlayer] == $winningCoinCount);
+    function didPlayerNotWin() {
+        return !($this->purses[$this->currentPlayer] == self::$numberOfCoinsToWin);
     }
 
     protected function isOdd($roll)
@@ -184,5 +184,12 @@ class Game
     protected function shouldResetCurrentPlayer()
     {
         return $this->currentPlayer == count($this->players);
+    }
+
+    protected function setDefaultPlayerParametersFor($playerId)
+    {
+        $this->places[$playerId] = 0;
+        $this->purses[$playerId] = 0;
+        $this->inPenaltyBox[$playerId] = false;
     }
 }

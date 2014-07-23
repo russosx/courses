@@ -8,18 +8,18 @@
 
 include_once __DIR__ . '/Game.php';
 
+const WRONG_ANSWER_ID = 7;
+const MIN_ANSWER_ID = 0;
+const MAX_ANSWER_ID = 9;
+
 /**
  * @param $minAnswerId
  * @param $maxAnswerId
- * @param $wrongAnswerId
  * @return bool
  */
-function isCurrentAnswerCorrect()
+function isCurrentAnswerCorrect($minAnswerId = MIN_ANSWER_ID, $maxAnswerId = MAX_ANSWER_ID)
 {
-    $minAnswerId = 0;
-    $maxAnswerId = 9;
-    $wrongAnswerId = 7;
-    return rand($minAnswerId, $maxAnswerId) != $wrongAnswerId;
+    return rand($minAnswerId, $maxAnswerId) != WRONG_ANSWER_ID;
 }
 
 function run() {
@@ -35,11 +35,20 @@ function run() {
         $dice = rand(0, 5) + 1;
         $aGame->roll($dice);
 
-        if (isCurrentAnswerCorrect()) {
-            $notAWinner = $aGame->wasCorrectlyAnswered();
-        } else {
-            $notAWinner = $aGame->wrongAnswer();
-        }
+        $notAWinner = getNotWinner($aGame, isCurrentAnswerCorrect());
 
     } while ($notAWinner);
+}
+
+/**
+ * @param $aGame
+ * @return mixed
+ */
+function getNotWinner($aGame, $isCurrentAnswerCorrect)
+{
+    if ($isCurrentAnswerCorrect) {
+        return $aGame->wasCorrectlyAnswered();
+    } else {
+        return $aGame->wrongAnswer();
+    }
 }
