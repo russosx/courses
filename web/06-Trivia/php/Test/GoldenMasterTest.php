@@ -34,15 +34,16 @@ class GoldenMasterTest extends PHPUnit_Framework_TestCase
         }
     }
 
-//    function testGenerateOutput() {
-//        // $times = 20000;
-//        $this->markTestSkipped();
-//        $this->generateMany($this->times, $this->gmPath);
-//    }
+    function testTrue() {
+        $this->assertTrue(true);
+    }
+    function testGenerateOutput() {
+        $this->markTestSkipped();
+        $this->generateMany($this->times, $this->gmPath);
+    }
  
     function testOutputMatchesGoldenMaster() {
-        // $times = 20000;
-        $actualPath = '/tmp/actual.txt';
+        $actualPath = 'actual.txt';
         $this->generateMany($this->times, $actualPath);
         $file_content_gm = file_get_contents($this->gmPath);
         $file_content_actual = file_get_contents($actualPath);
