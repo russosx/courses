@@ -150,4 +150,6 @@ map1
 //let sort1 = sort([1, 5, 3, 12, 2]) { $0 > $1 }
 //sort1
 
+import UIKit
+import Foundation
 
