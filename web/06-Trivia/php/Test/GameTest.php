@@ -20,9 +20,11 @@ class GameTest extends PHPUnit_Framework_TestCase {
         unset($this->game);
     }
 
+    // Part 5: Game`s testable methods
+
     function testAGameWithNotEnoughPlayersIsNotPlayable() {
         $this->assertFalse($this->game->isPlayable());
-        $this->addJustNotEnoughPlayers($game);
+        $this->addJustNotEnoughPlayers($this->game);
         $this->assertFalse($this->game->isPlayable());
     }
 
@@ -78,5 +80,121 @@ class GameTest extends PHPUnit_Framework_TestCase {
             $this->game->add('A Player');
         }
     }
+
+    // Part 6: Attacking complex methods
+
+    function testAPlayersNextPositionIsCorrectlyDeterminedWhenNoNewLapIsInvolved() {
+        $currentPlace = 2;
+        $numberRequiredToGetOutOfPenaltyBox = 1;
+
+        $this->setAPlayerThatIsNotInThePenaltyBox();
+        $this->setCurrentPlayersPosition($currentPlace);
+
+        $this->game->roll($numberRequiredToGetOutOfPenaltyBox);
+
+        $this->assertEquals('3', $this->getCurrentPlayersPosition(), 'Player was expected at position 3');
+    }
+
+    function testPlayerGettingOutOfPenaltyNextPositionWithNewLap() {
+        $currentPlace = 11;
+        $numberRequiredToGetOutOfPenaltyBox = 3;
+
+        $this->setAPlayerThatIsInThePenaltyBox();
+        $this->setCurrentPlayersPosition($currentPlace);
+
+        $this->game->roll($numberRequiredToGetOutOfPenaltyBox);
+
+        $this->assertEquals('2', $this->getCurrentPlayersPosition(), 'Player was expected at position 3');
+    }
+
+    function testAPlayerWillStartANewLapWhenNeeded() {
+        $currentPlace = 11;
+        $rolledNumber = 2;
+
+        $this->setAPlayerThatIsNotInThePenaltyBox();
+        $this->setCurrentPlayersPosition($currentPlace);
+
+        $this->game->roll($rolledNumber);
+
+        $this->assertEquals('1', $this->getCurrentPlayersPosition(), 'Player was expected at position 3');
+    }
+
+    function testRockCategoryCanBeDetermined() {
+        $currentPlaces = [3];
+        $expectedCategory = 'Rock';
+        $this->assertCorrectCategoryForGivenPlaces($currentPlaces, $expectedCategory);
+    }
+
+    function testScienceCategoryCanBeDetermined() {
+        $currentPlaces = [1];
+        $expectedCategory = 'Science';
+        $this->assertCorrectCategoryForGivenPlaces($currentPlaces, $expectedCategory);
+    }
+
+    function testAPlayerWhoIsPenalizedAndRollsAnEvenNumberWillStayInThePenaltyBox() {
+        $rolledNumber = 2;
+        $this->setAPlayerThatIsInThePenaltyBox();
+
+        $this->game->roll($rolledNumber);
+
+        $this->assertFalse($this->game->isGettingOutOfPenaltyBox);
+    }
+
+    function testAPlayerWhoIsPenalizedAndRollsAnOddNumberWillGetOutOfThePenaltyBox() {
+        $rolledNumber = 1;
+        $this->setAPlayerThatIsInThePenaltyBox();
+
+        $this->game->roll($rolledNumber);
+
+        $this->assertTrue($this->game->isGettingOutOfPenaltyBox);
+    }
+
+    private function setAPlayerThatIsNotInThePenaltyBox()
+    {
+        $this->game->currentPlayer = 0;
+        $this->game->players[$this->game->currentPlayer] = 'John';
+        $this->game->inPenaltyBox[$this->game->currentPlayer] = false;
+    }
+
+    private function setAPlayerThatIsInThePenaltyBox()
+    {
+        $this->game->currentPlayer = 0;
+        $this->game->players[$this->game->currentPlayer] = 'John';
+        $this->game->inPenaltyBox[$this->game->currentPlayer] = true;
+    }
+
+    /**
+     * @param $currentPlace
+     */
+    private function setCurrentPlayersPosition($currentPlace)
+    {
+        $this->game->places[$this->game->currentPlayer] = $currentPlace;
+    }
+
+    /**
+     * @return mixed
+     */
+    private function getCurrentPlayersPosition()
+    {
+        return $this->game->places[$this->game->currentPlayer];
+    }
+
+    /**
+     * @param $currentPlaces
+     * @param $expectedCategory
+     */
+    private function assertCorrectCategoryForGivenPlaces($currentPlaces, $expectedCategory)
+    {
+        foreach ($currentPlaces as $currentPlace) {
+            $this->setAPlayerThatIsNotInThePenaltyBox();
+            $this->setCurrentPlayersPosition($currentPlace);
+            $foundCategory = $this->game->currentCategory();
+            $this->assertEquals($expectedCategory, $foundCategory,
+                "Expected {$expectedCategory} category for position " . $currentPlace .
+                ' but got ' . $foundCategory);
+        }
+    }
+
+
 }
  
